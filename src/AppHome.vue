@@ -1,8 +1,8 @@
 <template>
 <v-container id="inicio">
-    <v-divider :thickness="50"></v-divider>
+    <v-divider :thickness="30"></v-divider>
       <AppCarrusel/>
-      <v-divider :thickness="50"></v-divider>
+      <v-divider :thickness="30"></v-divider>
     <AppPanels/>
   </v-container>
   <container>

@@ -1,7 +1,7 @@
 <template>
   <v-app>
     
-      <v-container fluid><h1 class="headline-1" @click="homeC()">Sat. La Sarnilla</h1>
+      <v-container fluid><h1 justify="center" align="center" class="headline-1" @click="homeC()">Sat. La Sarnilla</h1>
         <v-row justify="center" align="center" style="height: 100%;">
           
           
