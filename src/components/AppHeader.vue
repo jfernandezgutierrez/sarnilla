@@ -26,6 +26,7 @@
       <AppHome/>  
       </container>
       <container v-if="imagenes==true">
+        
       <AppImagenes/>  
       </container>
       <container v-if="zona==true">
