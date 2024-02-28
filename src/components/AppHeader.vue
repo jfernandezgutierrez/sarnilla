@@ -22,17 +22,20 @@
           </v-btn>
         </v-row>
       </v-container>
+      <!--Inicio-->
       <container v-if="home==true">
       <AppHome/>  
       </container>
+      <!--Imagenes-->
       <container v-if="imagenes==true">
         
-      <AppImagenes/>  
+      <AppImagenes/> 
+      <!--Zona--> 
       </container>
       <container v-if="zona==true">
       <AppZona/>  
       </container>
-      
+      <AppFooter/>
     
     
     
@@ -43,11 +46,13 @@
 import AppHome from "../AppHome.vue"
 import AppImagenes from "../AppImagenes.vue"
 import AppZona from "../AppZona.vue"
+import AppFooter from './AppFooter.vue';
 export default {
   name: 'AppHeader',
   components: {
     AppHome,
     AppImagenes,
+    AppFooter,
     AppZona
   },
   data() {
