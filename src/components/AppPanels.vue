@@ -1,7 +1,7 @@
 <template>
      <div>
-      <iframe src="https://drive.google.com/file/d/1NaUFxCm4N3T0fxRLki7QKkYRQr4HSshv/preview"  ></iframe>
-    
+      <video ref="myVideo" class="fm-video video-js vjs-16-9 vjs-big-play-centered" controls></video>
+
   </div>
     
     <div style="">
@@ -37,6 +37,8 @@
   </template>
   
   <script>
+  import videojs from 'video.js';
+import 'video.js/dist/video-js.css';
     export default {
         name: 'AppPanels',
       data: () => ({
@@ -44,5 +46,33 @@
         historia:[],
         hacemos:[]
       }),
+      mounted() {
+        this.player = videojs(this.$refs.myVideo, {
+      fluid:true,
+      controls: true,
+      autoplay: true,
+      loop:true,
+      sources: [
+        { src: require('../assets/Videos/resumen.mp4'), type: 'video/mp4' },
+      ],
+    });
+    
+  },
+  beforeUnmount() {
+   
+    if (this.player) {
+      this.player.dispose();
+    }
+  },
+  methods: {
+   
+  },
     }
   </script>
+  <style>
+  /* Estilos para ajustar el tamaño del video */
+  .fm-video {
+    width: 5%; /* Puedes ajustar el tamaño según tus necesidades */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+  }
+  </style>
