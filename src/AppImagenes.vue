@@ -5,9 +5,9 @@
       color="deep-purple-accent-4"
       align-tabs="center"
     >
-      <v-tab :value="1">Landscape</v-tab>
-      <v-tab :value="2">City</v-tab>
-      <v-tab :value="3">Abstract</v-tab>
+      <v-tab :value="1">Cuadra</v-tab>
+      <v-tab :value="2">Maquinaria</v-tab>
+      <v-tab :value="3">Obrador</v-tab>
     </v-tabs>
     <v-window v-model="tab">
       <v-window-item
