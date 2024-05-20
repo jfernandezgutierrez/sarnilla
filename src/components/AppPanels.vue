@@ -26,9 +26,7 @@
           </v-expansion-panel-text>
         </v-expansion-panel>
       </v-expansion-panels>
-    </v-container>
 
-    <v-container>
       <v-expansion-panels v-model="hacemos">
         <v-expansion-panel>
           <v-expansion-panel-title>
@@ -52,9 +50,8 @@
             </p>
 
             <video
-              
+              class="fm-video"
               controls
-              autoplay
               loop
               :src="taxiVideoSrc"
             >
@@ -69,7 +66,22 @@
               calidad. Todo el proceso, desde el ordeño hasta el envasado, se
               realiza con la máxima higiene y cuidado.
             </p>
-
+            <video
+              class="fm-video"
+              controls
+              loop
+              :src="robot"
+            >
+              Your browser does not support the video tag.
+            </video>
+            <video
+              class="fm-video"
+              controls
+              loop
+              :src="ordeno"
+            >
+              Your browser does not support the video tag.
+            </video>
             <h2>Producción de Bolas de Silo</h2>
             <p>
               Además de nuestra producción de leche, también producimos bolas de
@@ -103,16 +115,32 @@ export default {
       hacemos: [],
       mainVideoSrc: require('../assets/Videos/resumen.mp4'),
       taxiVideoSrc: require('../assets/Videos/taxi.mp4'),
+      robot: require('../assets/Videos/robot-pezoneras.mp4'),
+      ordeno: require('../assets/Videos/sala-ordeno.mp4'),
     };
   },
 };
 </script>
 
 <style>
-/* Estilos para ajustar el tamaño del video */
 .fm-video {
-  width: 100%; /* Ajusta el tamaño según tus necesidades */
-  height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
-  transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
+  width: 100%;
+  height: auto;
+}
+.sala {
+  width: 50%;
+  height: auto;
+}
+.robot {
+  width: 50%;
+  height: 20%;
+}
+
+.v-container {
+  margin-bottom: 16px;
+}
+
+.v-expansion-panel-text {
+  overflow: hidden;
 }
 </style>

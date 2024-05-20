@@ -2,19 +2,19 @@
     <v-footer color="" app >
       <v-row justify="center" align="center">
        
-        <v-col cols="12" sm="2">
+        <v-col cols="12" sm="3" md="3" lg="4" xl="3">
           <v-row align="center">
             <v-icon class="mr-2">mdi-phone</v-icon>
             <span class="white--text">+34 696659284</span>
           </v-row>
         </v-col>
-        <v-col cols="12" sm="2">
+        <v-col cols="12" sm="3" md="3" lg="4" xl="3">
           <v-row align="center">
             <v-icon class="mr-2">mdi-email</v-icon>
             <span class="white--text">javi.lasarnilla@yahoo.es</span>
           </v-row>
         </v-col>
-        <v-col cols="12" sm="2">
+        <v-col cols="12" sm="3" md="3" lg="4" xl="3">
           <a href="https://www.instagram.com/lasarnilla/" target="_blank" class="no-decoration">
           <v-row >
             <v-icon  class="mr-2">mdi-instagram</v-icon>
