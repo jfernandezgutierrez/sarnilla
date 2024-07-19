@@ -50,7 +50,7 @@
             </p>
 
             <video
-              class="fm-video"
+              class="sala fm-video"
               controls
               loop
               :src="taxiVideoSrc"
@@ -67,7 +67,7 @@
               realiza con la máxima higiene y cuidado.
             </p>
             <video
-              class="fm-video"
+              class="robot fm-video"
               controls
               loop
               :src="robot"
@@ -75,7 +75,7 @@
               Your browser does not support the video tag.
             </video>
             <video
-              class="fm-video"
+              class="sala fm-video"
               controls
               loop
               :src="ordeno"
@@ -123,7 +123,8 @@ export default {
 </script>
 
 <style>
-.fm-video {
+@media screen and (min-width: 900px) {
+  .fm-video {
   width: 100%;
   height: auto;
 }
@@ -135,6 +136,17 @@ export default {
   width: 50%;
   height: 20%;
 }
+}
+@media screen and (max-width: 900px) {
+  .fm-video {
+  width: 100%;
+  height: auto;
+}
+
+}
+
+
+
 
 .v-container {
   margin-bottom: 16px;
