@@ -1,19 +1,23 @@
 <template>
-  <v-app class="d-flex flex-column">
+  
 
     <v-container fluid>
       <h1 justify="center" align="center" class="headline-1" @click="homeC()">Sat. La Sarnilla</h1>
+      <br>
       <v-row justify="center" align="center" style="height: 100%;">
         <v-btn text @click="homeC()">
-          <v-icon>mdi-home</v-icon>
+          <v-icon color="green">mdi-barn</v-icon>
           <span>Inicio</span>
         </v-btn>
-        <v-btn text @click="imagenesC()">
+        <!--
+          <v-btn text @click="imagenesC()">
           <v-icon>mdi-heart</v-icon>
           <span>Imagenes</span>
         </v-btn>
+        -->
+      
         <v-btn text @click="zonaC()">
-          <v-icon>mdi-map-marker</v-icon>
+          <v-icon color="green">mdi-map-marker</v-icon>
           <span>Zona</span>
         </v-btn>
       </v-row>
@@ -32,26 +36,22 @@
       </template>
     </v-container>
 
-    <!-- Footer -->
-    <v-container fluid class="footer-container">
-      <AppFooter />
-    </v-container>
+  
 
-  </v-app>
+ 
 </template>
 
 <script>
 import AppHome from "../AppHome.vue";
 import AppImagenes from "../AppImagenes.vue";
 import AppZona from "../AppZona.vue";
-import AppFooter from './AppFooter.vue';
 
 export default {
   name: 'AppHeader',
   components: {
     AppHome,
     AppImagenes,
-    AppFooter,
+    
     AppZona
   },
   data() {
