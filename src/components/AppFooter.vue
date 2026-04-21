@@ -1,6 +1,9 @@
 <template>
+
   <v-footer  class="footer">
+   
     <v-container>
+      
       <v-row justify="center" align="center" class="text-center">
         
         <v-col cols="12" md="4">
@@ -25,6 +28,10 @@
             </v-row>
           </a>
         </v-col>
+
+      </v-row>
+      <v-row justify="center" align="center" >
+          <div id="container-c7ab977912ac7c4dd12a55bed306421c"></div>
 
       </v-row>
     </v-container>
